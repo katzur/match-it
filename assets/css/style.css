@@ -73,10 +73,11 @@ body {
     font-size: 200%;
     margin-top: 15px;
     background-color: transparent;
-    border: 0.1em solid #FFFFFF;
     letter-spacing: 4px;
+    border: 3px solid whitesmoke;
+    border-radius: 50%;
 
-/* bouncy animation for button element comes from: */
+/* bouncy animation for button element comes from: https://fdossena.com/?p=html5cool/buttons/i.frag */
     animation:bouncy 5s infinite linear;
     position:relative;
 }
@@ -88,4 +89,9 @@ body {
     48%{top:-0.4em}
     50%{top:0em}
     100%{top:0em;}
+}
+
+#game-invite button a {
+    text-decoration: none;
+    color: white;
 }
