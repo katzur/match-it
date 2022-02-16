@@ -6,7 +6,7 @@
     border: none;
 }
 
-/* --------- Global style */
+/* global style */
 body {
     background-color: black;
     font-family: "Chewy", sans-serif;
@@ -14,8 +14,31 @@ body {
     text-align: center;
 }
 
+/* logo */
+ 
+#logo img {
+    max-width: 15%;
+    max-height: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+
+/* hero container styling */
 #hero-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 50% 45%;
+        grid-template-rows: 220px 250px 120px;
 }
+
+#hero-image {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+#hero-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
