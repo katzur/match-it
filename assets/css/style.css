@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Palette+Mosaic&family=Rammetto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* --------- Global style */
+body {
+    background-color: black;
+    font-family: "Chewy", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+}
