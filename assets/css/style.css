@@ -30,12 +30,12 @@ body {
 #hero-container {
         display: grid;
         grid-template-columns: 50% 45%;
-        grid-template-rows: 220px 250px 120px;
+        grid-template-rows: repeat(3, 180px);
 }
 
 #hero-image {
-    grid-column: 2;
-    grid-row: 1/4;
+    grid-column: 2/3;
+    grid-row: 1/3;
 }
 
 #hero-image img {
@@ -44,9 +44,8 @@ body {
   }
 
 #game-invite {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
     text-align: center;
 }
 
@@ -131,7 +130,7 @@ footer > p {
 .game-info-container {
     grid-column: 1 / -1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -144,6 +143,7 @@ footer > p {
     display: grid;
     grid-template-columns: repeat(5, 160px);
     grid-gap: 15px;
+    margin: 50px;
 }
 
 .card {
