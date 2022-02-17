@@ -6,12 +6,12 @@
     border: none;
 }
 
+
 /* global style */
 body {
     background-color: black;
     font-family: "Chewy", sans-serif;
     color: white;
-    text-align: center;
     overflow: hidden;
 }
 
@@ -47,6 +47,7 @@ body {
     grid-column: 1;
     grid-row: 2;
     margin-top: 20px;
+    text-align: center;
 }
 
 #game-invite h3 {
@@ -124,4 +125,29 @@ footer > p {
     text-align: right;
     letter-spacing: 3px;
     font-family: "Rammetto One", sans-serif;
+}
+
+/*game container */
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.game-info {
+    font-size: 250%;
+    font-family: "Rammetto One", sans-serif;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-gap: 15px;
+}
+
+.card {
+    background-color: #f2b5d4;
+    height: 145px;
+    width: 130px;
 }
