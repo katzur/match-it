@@ -12,6 +12,7 @@ body {
     font-family: "Chewy", sans-serif;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 
 /* logo */
@@ -58,7 +59,7 @@ body {
 #game-invite h1 {
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 350%;
+    font-size: 320%;
     font-family: "Rammetto One", sans-serif;
     color: #f2b5d4;
 }
@@ -98,7 +99,9 @@ body {
 footer {
     height: 50px;
     padding: 20px;
-    margin-top: 170px;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
 }
 
 /* contact and social media info icons */
