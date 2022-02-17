@@ -19,8 +19,8 @@ body {
 #logo img {
     max-width: 15%;
     max-height: 15%;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
     float: left;
 }
 
@@ -38,7 +38,6 @@ body {
 }
 
 #hero-image img {
-    display: block;
     max-width: 100%;
     height: auto;
   }
@@ -46,9 +45,11 @@ body {
 #game-invite {
     grid-column: 1;
     grid-row: 2;
+    margin-top: 20px;
 }
 
 #game-invite h3 {
+    margin: 10px;
     font-size: 250%;
     letter-spacing: 2px;
     font-weight: 100;
@@ -56,6 +57,7 @@ body {
 
 #game-invite h1 {
     text-transform: uppercase;
+    letter-spacing: 7px;
     font-size: 350%;
     font-family: "Rammetto One", sans-serif;
 /* method for colorful gradient comes from: https://welearncode.com/rainbow-text/ */
@@ -71,7 +73,7 @@ body {
     text-decoration: none;
     font-family: "Rammetto One", sans-serif;
     font-size: 200%;
-    margin-top: 15px;
+    margin-top: 25px;
     background-color: transparent;
     letter-spacing: 4px;
     border: 3px solid whitesmoke;
@@ -94,4 +96,33 @@ body {
 #game-invite button a {
     text-decoration: none;
     color: white;
+}
+
+/*footer */
+footer {
+    height: 50px;
+    padding: 20px;
+    margin-top: 170px;
+}
+
+/* contact and social media info icons */
+li {
+    display: inline-block;
+}
+
+.social-networks {
+    float: left;
+}
+
+.social-networks i {
+    font-size: 200%;
+    color: white;
+    margin-left: 20px;
+}
+
+/* copyright footer section */
+footer > p {
+    text-align: right;
+    letter-spacing: 3px;
+    font-family: "Rammetto One", sans-serif;
 }
