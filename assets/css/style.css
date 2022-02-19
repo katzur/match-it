@@ -145,14 +145,35 @@ footer > p {
     grid-template-columns: repeat(6, 120px);
     grid-gap: 20px;
     justify-items: end;
+/* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
+    perspective: 1000px;
 }
 
 .memory-card {
     background-color: #f2b5d4;
     height: 130px;
     width: 130px;
+    transform-style: preserve-3d;
+    transition: transform .7s;
 }
 
 .memory-card .front-face {
     width: 130px;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .4s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
 }
