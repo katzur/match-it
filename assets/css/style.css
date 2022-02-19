@@ -143,9 +143,8 @@ footer > p {
 .game-container {
     display: grid;
     grid-template-columns: repeat(6, 120px);
-    grid-gap: 15px;
+    grid-gap: 20px;
     justify-items: end;
-    overflow: hidden;
 }
 
 .memory-card {
@@ -155,9 +154,5 @@ footer > p {
 }
 
 .memory-card .front-face {
-    width: 130px;
-    height: 130px;
-}
-.memory-card .back-face {
     width: 130px;
 }
