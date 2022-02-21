@@ -59,11 +59,19 @@ function unflipCards(){
     }, 1100);
 }
 
-
-cards.forEach(card => card.addEventListener('click', flipCard));
-
 // reseting the board after all matches found
 function resetBoard(){
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
+//shuffling the cards
+(function shuffle(){
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 18);
+        card.style.order = randomPos;
+    });
+})();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
