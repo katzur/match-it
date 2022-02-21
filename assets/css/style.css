@@ -136,7 +136,7 @@ footer > p {
 .game-info {
     font-size: 250%;
     font-family: "Rammetto One", sans-serif;
-    word-spacing: 15px;
+    word-spacing: 20px;
     margin-right: 50px;
 }
 
@@ -146,7 +146,7 @@ footer > p {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 15px;
     justify-items: center;
 /* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
@@ -164,6 +164,11 @@ footer > p {
 
 .memory-card .front-face {
     width: 130px;
+}
+
+.memory-card:hover {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
 }
 
 .memory-card:active {
