@@ -140,11 +140,15 @@ footer > p {
     margin-right: 50px;
 }
 
+.game-info i {
+    color: white;
+}
+
 .game-container {
     display: grid;
-    grid-template-columns: repeat(6, 120px);
-    grid-gap: 20px;
-    justify-items: end;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
 /* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
     perspective: 1000px;
 }
@@ -152,7 +156,7 @@ footer > p {
 .memory-card {
     background-color: #f2b5d4;
     height: 130px;
-    width: 130px;
+    width: 128px;
     transform-style: preserve-3d;
     transition: transform .7s;
     border-radius: 25%;

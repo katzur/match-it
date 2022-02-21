@@ -65,7 +65,7 @@ function resetBoard(){
     [firstCard, secondCard] = [null, null];
 }
 
-//shuffling the cards
+//shuffling the cards on load
 (function shuffle(){
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 18);
