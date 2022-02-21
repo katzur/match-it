@@ -155,6 +155,7 @@ footer > p {
     width: 130px;
     transform-style: preserve-3d;
     transition: transform .7s;
+    border-radius: 25%;
 }
 
 .memory-card .front-face {
