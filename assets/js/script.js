@@ -43,7 +43,7 @@ function matchCards(){
 
 //when cards don't match - flip back after a 1.1 second
 function unflipCards(){
-    //locking the board to avoid game bug based on additional clicks before 1.1s
+    //locking the board to avoid game bug based on additional clicks before 1.1sec
     lockBoard = true;
 
     setTimeout(() => {
