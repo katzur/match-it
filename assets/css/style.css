@@ -125,6 +125,41 @@ footer > p {
     font-family: "Rammetto One", sans-serif;
 }
 
+/* overlay text - idea from YT tutorial: https://www.youtube.com/watch?v=28VfzEiJgy4 */
+
+.game-over-text-small {
+    font-size: 200%;
+}
+
+.game-over-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.game-over-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        font-size: 400%;
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
 /*game container */
 .game-info-container {
     grid-column: 1 / -1;
