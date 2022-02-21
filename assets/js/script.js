@@ -42,6 +42,8 @@ function checkForMatch() {
 function matchCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    resetBoard();
 }
 
 //when cards don't match - flip back after a 1.1 second
@@ -53,11 +55,15 @@ function unflipCards(){
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
 
-    lockBoard = false;
+    resetBoard();
     }, 1100);
 }
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-
+// reseting the board after all matches found
+function resetBoard(){
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
