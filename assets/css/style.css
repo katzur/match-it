@@ -127,11 +127,11 @@ footer > p {
 
 /* overlay text - idea from YT tutorial: https://www.youtube.com/watch?v=28VfzEiJgy4 */
 
-.game-over-text-small {
+.overlay-text-small {
     font-size: 200%;
 }
 
-.game-over-text {
+.overlay-text {
     display: none;
     position: fixed;
     top: 0;
@@ -143,11 +143,12 @@ footer > p {
     z-index: 100;
 }
 
-.game-over-text.visible {
+.overlay-text.visible {
     display: flex;
     flex-direction: column;
     animation: overlay-grow 500ms forwards;
 }
+
 
 @keyframes overlay-grow {
     from {

@@ -28,9 +28,14 @@
     </header>
 
     <!-- pop-up screen at the end of the game -->
-    <div class="game-over-text">
+    <div id="game-over-text" class="overlay-text">
+        Not enough time?
+        <span class="overlay-text-small">Try again</span> 
+    </div>
+
+    <div id="victory-text" class="overlay-text">
         Hooray! You matched all cards!
-        <span class="game-over-text-small">Play again</span> 
+        <span class="overlay-text-small">Play again</span> 
     </div>
 
     <!-- game container -->
@@ -38,11 +43,11 @@
         <div class="game-info-container">
 
             <div class="game-info">
-                Score<span id="score"> 0</span>
+                Time<span id="timer"> 0</span>
             </div>
 
             <div class="game-info">
-                Flips<span id="flips"> 0</span>
+                Pairs<span id="pairs"> 0</span>
             </div>
 
             <a class="game-info" href="game.html">

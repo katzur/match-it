@@ -4,6 +4,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+
 // flipping cards
 function flipCard() {
     if (lockBoard) return;
@@ -42,7 +43,7 @@ function checkForMatch() {
 function matchCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
-
+    
     resetBoard();
 }
 
@@ -63,6 +64,7 @@ function unflipCards(){
 function resetBoard(){
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
+
 }
 
 //shuffling the cards on load
@@ -73,5 +75,5 @@ function resetBoard(){
     });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
 
+cards.forEach(card => card.addEventListener('click', flipCard));
