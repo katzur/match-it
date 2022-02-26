@@ -19,6 +19,7 @@ function countDown() {
     popUp.classList.add('visible');
     time = 0;
     }
+    // overlay at the end of the game if player matches all the cards
     else {
         var popUp = document.getElementById('victory-text');
         popUp.classList.add('visible');
