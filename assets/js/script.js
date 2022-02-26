@@ -3,22 +3,23 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let time = 3;
+let time = 100;
+let score = 1;
+
 
 // timer
 function countDown() {
-
     timer.innerHTML = time;
-    if (time > 0) {
+    if (score < 10 ) {
     (time = time -1)
-    } else {
+    }
+    else {
         (time === 0);
-// overlay at the end of the game
+    // overlay at the end of the game if time runs out
     var popUp = document.getElementById('game-over-text');
     popUp.classList.add('visible');
     }
 }
-
 setInterval("countDown()", 1000);
 
 // flipping cards
@@ -50,12 +51,21 @@ function flipCard() {
 function checkForMatch() {
     if (firstCard.dataset.framework === secondCard.dataset.framework) {
         matchCards();
+// score increase
+        pairs.innerHTML = score;
+        score = score + 1;
+    
+    if (score === 10) {
+        var popUp = document.getElementById('victory-text');
+        popUp.classList.add('visible');
+    }
+
     } else {
         unflipCards();
     }
 }
 
-//when cards match
+//keeping cards face up after matching them
 function matchCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -76,11 +86,10 @@ function unflipCards(){
     }, 1100);
 }
 
-// reseting the board after all matches found
+// after uncovering first two cards it allows the player to uncover next ones
 function resetBoard(){
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
-
 }
 
 //shuffling the cards on load
@@ -90,6 +99,5 @@ function resetBoard(){
         card.style.order = randomPos;
     });
 })();
-
 
 cards.forEach(card => card.addEventListener('click', flipCard));
