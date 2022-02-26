@@ -11,7 +11,7 @@ let score = 1;
 function countDown() {
     timer.innerHTML = time;
     if (score < 10 && time > 0) {
-    (time = time -1)
+    ( time = time -1)
     }
     else if (time === 0) {       
     // overlay at the end of the game if time runs out
