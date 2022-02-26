@@ -10,14 +10,18 @@ let score = 1;
 // timer
 function countDown() {
     timer.innerHTML = time;
-    if (score < 10 ) {
+    if (score < 10 && time > 0) {
     (time = time -1)
     }
-    else {
-        (time === 0);
+    else if (time === 0) {       
     // overlay at the end of the game if time runs out
     var popUp = document.getElementById('game-over-text');
     popUp.classList.add('visible');
+    time = 0;
+    }
+    else {
+        var popUp = document.getElementById('victory-text');
+        popUp.classList.add('visible');
     }
 }
 setInterval("countDown()", 1000);
