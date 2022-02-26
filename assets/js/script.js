@@ -3,7 +3,23 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let time = 3;
 
+// timer
+function countDown() {
+
+    timer.innerHTML = time;
+    if (time > 0) {
+    (time = time -1)
+    } else {
+        (time === 0);
+// overlay at the end of the game
+    var popUp = document.getElementById('game-over-text');
+    popUp.classList.add('visible');
+    }
+}
+
+setInterval("countDown()", 1000);
 
 // flipping cards
 function flipCard() {
