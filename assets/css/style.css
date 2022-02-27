@@ -276,7 +276,11 @@ footer {
 }
 
 .game-container {
-    grid-template-columns: repeat(4, 170px);
+    grid-template-columns: repeat(4, auto);
+}
+
+.game-info-container {
+    margin-left: 30px;
 }
 
 body {
@@ -284,7 +288,7 @@ body {
 }
 
 .game-info {
-    font-size: 220%;
+    font-size: 200%;
 }
 
 #hero-image {
@@ -293,5 +297,11 @@ body {
 
 #alternative-image {
     display: initial;
+    margin-top: 50px;
 }
+
+#logo img {
+    max-width: 20%;
+}
+
 }
