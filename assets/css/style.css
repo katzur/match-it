@@ -29,7 +29,7 @@ body {
 #hero-container {
         display: grid;
         grid-template-columns: 50% 45%;
-        grid-template-rows: repeat(3, 180px);
+        grid-template-rows: repeat(3, 200px);
 }
 
 #hero-image {
@@ -38,7 +38,7 @@ body {
 }
 
 #hero-image img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
 
@@ -225,4 +225,31 @@ footer > p {
 
 .front-face {
     transform: rotateY(180deg);
+}
+
+/* media queries */
+
+/*for larger to medium size from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+    
+#hero-image img {
+    max-width: 100%;
+}
+
+#game-invite h3 {
+    font-size: 200%;
+}
+
+#game-invite h1 {
+    font-size: 250%;
+}
+#game-invite button {
+    font-size: 200%;
+    padding: 0;
+}
+
+.game-container {
+    margin-right: 10px;
+}
 }
