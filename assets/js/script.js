@@ -14,12 +14,12 @@ function countDown() {
     ( time = time -1)
     }
     else if (time === 0) {       
-    // overlay at the end of the game if time runs out
+    // overlay text at the end of the game if time runs out
     var popUp = document.getElementById('game-over-text');
     popUp.classList.add('visible');
     time = 0;
     }
-    // overlay at the end of the game if player matches all the cards
+    // overlay text at the end of the game if player matches all the cards
     else {
         var popUp = document.getElementById('victory-text');
         popUp.classList.add('visible');
@@ -30,7 +30,7 @@ setInterval("countDown()", 1000);
 // flipping cards
 function flipCard() {
     if (lockBoard) return;
-    //double click on one card won't consider it as match
+    //double click on one card won't consider it as a match
     if (this === firstCard) return;
 
     this.classList.toggle('flip');
@@ -59,7 +59,7 @@ function checkForMatch() {
 // score increase
         pairs.innerHTML = score;
         score = score + 1;
-    
+    // victory pop up text at the end of the game
     if (score === 10) {
         var popUp = document.getElementById('victory-text');
         popUp.classList.add('visible');
