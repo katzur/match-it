@@ -131,7 +131,7 @@ footer > p {
     font-size: 200%;
     text-decoration: none;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 30px black, 0 0 15px pink;
+    text-shadow: 1px 1px 2px black, 0 0 30px black, 0 0 20px pink;
 }
 
 .overlay-text {
