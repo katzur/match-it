@@ -38,9 +38,13 @@ body {
     display: initial;
 }
 
-#alternative-image {
+#tablet-image {
     grid-column: 2/3;
     grid-row: 1/3;
+    display: none;
+}
+
+#phone-image {
     display: none;
 }
 
@@ -49,7 +53,7 @@ body {
     height: auto;
   }
 
-  #alternative-image img {
+  #tablet-image img {
     max-width: 90%;
     height: auto;
   }
@@ -246,7 +250,6 @@ footer > p {
     
 #hero-image img {
     max-width: 100%;
-    margin-top: 30px;
 }
 
 #game-invite h3 {
@@ -295,12 +298,11 @@ body {
     display: none;
 }
 
-#alternative-image {
+#tablet-image {
     display: initial;
-    margin-top: 50px;
 }
 
-#alternative-image img {
+#tablet-image img {
     max-width: 100%;
     margin-top: 20px;
 }
@@ -345,29 +347,26 @@ footer {
 
 #hero-container {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
 }
 
-#alternative-image {
+#phone-image {
     grid-column: 1/1;
     grid-row: 2/3;
+    display: initial;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#tablet-image {
+    display: none;
 }
 
 #game-invite {
     grid-column: 1/1;
     grid-row: 1/2;
-}
-
-#game-invite h3 {
-    font-size: 150%;
-}
-
-#game-invite h1 {
-    font-size: 180%;
-}
-
-#game-invite button {
-    font-size: 200%;
 }
 
 .social-networks {
@@ -377,4 +376,9 @@ footer {
 footer > p {
     text-align: left;
 }
+}
+
+/* for extra small screen sizes 480px and down */
+@media screen and (max-width: 480px) {
+    
 }
