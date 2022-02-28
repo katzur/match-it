@@ -15,7 +15,7 @@ body {
 }
 
 /* logo */
- 
+
 #logo img {
     max-width: 15%;
     max-height: 15%;
@@ -27,9 +27,9 @@ body {
 
 /* hero container styling */
 #hero-container {
-        display: grid;
-        grid-template-columns: 50% 45%;
-        grid-template-rows: repeat(3, 200px);
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-template-rows: repeat(3, 200px);
 }
 
 #hero-image {
@@ -51,12 +51,12 @@ body {
 #hero-image img {
     max-width: 90%;
     height: auto;
-  }
+}
 
-  #tablet-image img {
+#tablet-image img {
     max-width: 90%;
     height: auto;
-  }
+}
 
 #game-invite {
     grid-column: 1/2;
@@ -91,18 +91,39 @@ body {
     letter-spacing: 4px;
     border-radius: 50%;
 
-/* bouncy animation for button element comes from: https://fdossena.com/?p=html5cool/buttons/i.frag */
-    animation:bouncy 5s infinite linear;
-    position:relative;
+    /* bouncy animation for button element comes from: https://fdossena.com/?p=html5cool/buttons/i.frag */
+    animation: bouncy 5s infinite linear;
+    position: relative;
 }
-    @keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
 }
 
 #game-invite button a {
@@ -135,7 +156,7 @@ li {
 }
 
 /* copyright footer section */
-footer > p {
+footer>p {
     text-align: right;
     letter-spacing: 3px;
     font-family: "Rammetto One", sans-serif;
@@ -174,6 +195,7 @@ footer > p {
         background-color: rgba(0, 0, 0, 0);
         font-size: 0;
     }
+
     to {
         font-size: 400%;
         background-color: rgba(0, 0, 0, .8);
@@ -204,7 +226,7 @@ footer > p {
     grid-template-columns: repeat(6, auto);
     grid-gap: 15px;
     justify-items: center;
-/* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
+    /* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
     perspective: 1000px;
 }
 
@@ -235,7 +257,8 @@ footer > p {
     transform: rotateY(180deg);
 }
 
-.front-face, .back-face {
+.front-face,
+.back-face {
     backface-visibility: hidden;
 }
 
@@ -247,138 +270,159 @@ footer > p {
 
 /*for larger to medium size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-    
-#hero-image img {
-    max-width: 100%;
-}
 
-#game-invite h3 {
-    font-size: 200%;
-}
+    #hero-image img {
+        max-width: 100%;
+    }
 
-#game-invite h1 {
-    font-size: 250%;
-}
-#game-invite button {
-    font-size: 200%;
-    padding: 0;
-}
+    #game-invite h3 {
+        font-size: 200%;
+    }
 
-.game-container {
-    margin-right: 10px;
-}
+    #game-invite h1 {
+        font-size: 250%;
+    }
+
+    #game-invite button {
+        font-size: 200%;
+        padding: 0;
+    }
+
+    .game-container {
+        margin-right: 10px;
+    }
 }
 
 /* for medium screen sizes from 1024px wide and down */
 @media screen and (max-width: 1024px) {
-footer {
-    height: 50px;
-    padding: 20px;
-    width: 95%;
-    position: static;
-}
+    footer {
+        height: 50px;
+        padding: 20px;
+        width: 95%;
+        position: static;
+    }
 
-.game-container {
-    grid-template-columns: repeat(4, auto);
-}
+    .game-container {
+        grid-template-columns: repeat(4, auto);
+    }
 
-.game-info-container {
-    margin-left: 30px;
-}
+    .game-info-container {
+        margin-left: 30px;
+    }
 
-body {
-    overflow: auto;
-}
+    body {
+        overflow: auto;
+    }
 
-.game-info {
-    font-size: 200%;
-}
+    .game-info {
+        font-size: 200%;
+    }
 
-#hero-image {
-    display: none;
-}
+    #hero-image {
+        display: none;
+    }
 
-#tablet-image {
-    display: initial;
-}
+    #tablet-image {
+        display: initial;
+    }
 
-#tablet-image img {
-    max-width: 100%;
-    margin-top: 20px;
-}
+    #tablet-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
 
-#logo img {
-    max-width: 20%;
-}
+    #logo img {
+        max-width: 20%;
+    }
 
-.overlay-text-small {
-    font-size: 160%;
-}
+    .overlay-text-small {
+        font-size: 160%;
+    }
 }
 
 /* for small screen sizes 768px and down */
 @media screen and (max-width: 768px) {
 
-.overlay-text-small {
-    font-size: 110%;
-}
+    .overlay-text-small {
+        font-size: 110%;
+    }
 
-.game-container {
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
-}
+    .game-container {
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 10px;
+    }
 
-.game-info-container {
-    margin-left: 40px;
-}
+    .game-info-container {
+        margin-left: 40px;
+    }
 
-.game-info {
-    font-size: 160%;
-}
+    .game-info {
+        font-size: 160%;
+    }
 
-#logo img {
-    float: none;
-    max-width: 30%;
-}
+    #logo img {
+        float: none;
+        max-width: 30%;
+    }
 
-footer {
-    width: 90%;
-}
+    footer {
+        width: 90%;
+    }
 
-#hero-container {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
-    justify-items: center;
-}
+    #hero-container {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+    }
 
-#phone-image {
-    grid-column: 1/1;
-    grid-row: 2/3;
-    display: initial;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-}
+    #phone-image {
+        grid-column: 1/1;
+        grid-row: 2/3;
+        display: initial;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
 
-#tablet-image {
-    display: none;
-}
+    #tablet-image {
+        display: none;
+    }
 
-#game-invite {
-    grid-column: 1/1;
-    grid-row: 1/2;
-}
+    #game-invite {
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
 
-.social-networks {
-    float: none;
-}
+    .social-networks {
+        float: none;
+    }
 
-footer > p {
-    text-align: left;
-}
+    footer>p {
+        text-align: left;
+    }
 }
 
 /* for extra small screen sizes 480px and down */
 @media screen and (max-width: 480px) {
-    
+
+    #logo img {
+        max-width: 45%;
+    }
+
+    #game-invite h3 {
+        font-size: 250%;
+    }
+
+    #game-invite h1 {
+        font-size: 310%;
+    }
+
+    #game-invite button {
+        font-size: 290%;
+    }
+
+    #hero-container {
+        width: fit-content;
+    }
+
 }
