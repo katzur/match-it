@@ -300,8 +300,81 @@ body {
     margin-top: 50px;
 }
 
+#alternative-image img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
 #logo img {
     max-width: 20%;
 }
 
+.overlay-text-small {
+    font-size: 160%;
+}
+}
+
+/* for small screen sizes 768px and down */
+@media screen and (max-width: 768px) {
+
+.overlay-text-small {
+    font-size: 110%;
+}
+
+.game-container {
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
+
+.game-info-container {
+    margin-left: 40px;
+}
+
+.game-info {
+    font-size: 160%;
+}
+
+#logo img {
+    float: none;
+    max-width: 30%;
+}
+
+footer {
+    width: 90%;
+}
+
+#hero-container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 200px);
+}
+
+#alternative-image {
+    grid-column: 1/1;
+    grid-row: 2/3;
+}
+
+#game-invite {
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+
+#game-invite h3 {
+    font-size: 150%;
+}
+
+#game-invite h1 {
+    font-size: 180%;
+}
+
+#game-invite button {
+    font-size: 200%;
+}
+
+.social-networks {
+    float: none;
+}
+
+footer > p {
+    text-align: left;
+}
 }
