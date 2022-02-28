@@ -14,13 +14,13 @@ function countDown() {
         (time = time - 1)
     } else if (time === 0) {
         // overlay text at the end of the game if time runs out
-        var popUp = document.getElementById('game-over-text');
+        let popUp = document.getElementById('game-over-text');
         popUp.classList.add('visible');
         time = 0;
     }
     // overlay text at the end of the game if player matches all the cards
     else {
-        var popUp = document.getElementById('victory-text');
+        let popUp = document.getElementById('victory-text');
         popUp.classList.add('visible');
     }
 }
@@ -43,10 +43,6 @@ function flipCard() {
         hasFlippedCard = false;
         secondCard = this;
 
-        // identifying type of card
-        console.log(firstCard.dataset.framework);
-        console.log(secondCard.dataset.framework);
-
         checkForMatch();
     }
 }
@@ -60,7 +56,7 @@ function checkForMatch() {
         score = score + 1;
         // victory pop up text at the end of the game
         if (score === 10) {
-            var popUp = document.getElementById('victory-text');
+            let popUp = document.getElementById('victory-text');
             popUp.classList.add('visible');
         }
 
