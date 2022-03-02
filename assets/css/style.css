@@ -11,7 +11,6 @@ body {
     background-color: black;
     font-family: "Chewy", sans-serif;
     color: white;
-    overflow: hidden;
 }
 
 /* logo */
@@ -26,6 +25,7 @@ body {
 
 
 /* hero container styling */
+/*hero images */
 #hero-container {
     display: grid;
     grid-template-columns: 50% 45%;
@@ -56,6 +56,7 @@ body {
     height: auto;
 }
 
+/*hero image text */
 #game-invite {
     grid-column: 1;
     grid-row: 1;
@@ -161,12 +162,16 @@ footer>p {
 }
 
 /* overlay text - idea from YT tutorial: https://www.youtube.com/watch?v=28VfzEiJgy4 */
-
 .overlay-text-small {
     font-size: 200%;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 30px black, 0 0 20px pink;
+}
+
+#victory-text > p {
+    text-align: center;
+    font-size: 90%;
 }
 
 .overlay-text {
@@ -224,6 +229,7 @@ footer>p {
     grid-template-columns: repeat(6, auto);
     grid-gap: 15px;
     justify-items: center;
+    margin-bottom: 50px;
     /* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
     perspective: 1000px;
 }
@@ -309,6 +315,14 @@ footer>p {
         font-size: 200%;
     }
 
+    #game-invite h1 {
+        font-size: 200%;
+    }
+
+    #game-invite h3 {
+        font-size: 180%;
+    }
+
     #hero-image {
         display: none;
     }
@@ -353,7 +367,7 @@ footer>p {
 
     #logo img {
         float: none;
-        max-width: 30%;
+        max-width: 28%;
     }
 
     footer {
@@ -415,4 +429,19 @@ footer>p {
         width: fit-content;
     }
 
+    .overlay-text>p {
+        font-size: 80%;
+    }
+
+    .overlay-text-small {
+        font-size: 90%;
+    }
+
+    .overlay-text-small {
+        font-size: 80%;
+    }
+
+    footer>p {
+        font-size: 80%;
+    }
 }
