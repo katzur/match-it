@@ -19,7 +19,7 @@ body {
     max-width: 15%;
     max-height: 15%;
     margin-left: 1rem;
-    margin-top: -20px;
+    margin-top: -1em;
     float: left;
 }
 
@@ -46,6 +46,10 @@ body {
     display: none;
 }
 
+#phone-image img {
+    width: 120%;
+}
+
 #hero-image img {
     max-width: 90%;
     height: auto;
@@ -65,7 +69,7 @@ body {
 }
 
 #game-invite h3 {
-    margin: 10px;
+    margin: .75rem;
     font-size: 250%;
     letter-spacing: 2px;
     font-weight: 100;
@@ -86,7 +90,7 @@ body {
     text-decoration: none;
     font-family: "Rammetto One", sans-serif;
     font-size: 220%;
-    margin-top: 25px;
+    margin-top: 1rem;
     background-color: transparent;
     letter-spacing: 4px;
     border-radius: 50%;
@@ -151,7 +155,7 @@ li {
 .social-networks i {
     font-size: 200%;
     color: white;
-    margin-left: 20px;
+    margin-left: .75em;
 }
 
 /* copyright footer section */
@@ -169,7 +173,7 @@ footer>p {
     text-shadow: 1px 1px 2px black, 0 0 30px black, 0 0 20px pink;
 }
 
-#victory-text > p {
+#victory-text>p {
     text-align: center;
     font-size: 90%;
 }
@@ -230,6 +234,7 @@ footer>p {
     grid-gap: 15px;
     justify-items: center;
     margin-bottom: 50px;
+    padding: 5px;
     /* 3D effect of card flipping based on YT tutorial: https://www.youtube.com/watch?v=ZniVgo8U7ek */
     perspective: 1000px;
 }
@@ -284,7 +289,7 @@ footer>p {
     }
 
     #game-invite h1 {
-        font-size: 250%;
+        font-size: 230%;
     }
 
     #game-invite button {
@@ -315,14 +320,6 @@ footer>p {
         font-size: 200%;
     }
 
-    #game-invite h1 {
-        font-size: 200%;
-    }
-
-    #game-invite h3 {
-        font-size: 180%;
-    }
-
     #hero-image {
         display: none;
     }
@@ -332,7 +329,7 @@ footer>p {
     }
 
     #tablet-image img {
-        max-width: 100%;
+        max-width: 110%;
         margin-top: 20px;
     }
 
@@ -342,6 +339,10 @@ footer>p {
 
     .overlay-text-small {
         font-size: 160%;
+    }
+
+    #game-invite {
+        align-self: center;
     }
 }
 
@@ -388,6 +389,10 @@ footer>p {
         width: 80%;
     }
 
+    #phone-image img {
+        width: 110%;
+    }
+
     #tablet-image {
         display: none;
     }
@@ -414,19 +419,15 @@ footer>p {
     }
 
     #game-invite h3 {
-        font-size: 250%;
+        font-size: 180%;
     }
 
     #game-invite h1 {
-        font-size: 310%;
+        font-size: 200%;
     }
 
     #game-invite button {
-        font-size: 290%;
-    }
-
-    #hero-container {
-        width: fit-content;
+        font-size: 200%;
     }
 
     .overlay-text>p {
@@ -439,6 +440,10 @@ footer>p {
 
     .overlay-text-small {
         font-size: 80%;
+    }
+
+    #hero-container {
+        justify-items: initial;
     }
 
     footer>p {
