@@ -449,4 +449,8 @@ footer>p {
     footer>p {
         font-size: 80%;
     }
+
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
 }
