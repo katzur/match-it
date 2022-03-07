@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;

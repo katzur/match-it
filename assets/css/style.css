@@ -84,7 +84,8 @@ body {
 }
 
 #game-invite button {
-    color: white;
+    color: #dbcdf0;
+    cursor: pointer;
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
@@ -128,11 +129,6 @@ body {
     100% {
         top: 0em;
     }
-}
-
-#game-invite button a {
-    text-decoration: none;
-    color: #dbcdf0;
 }
 
 /*footer */
