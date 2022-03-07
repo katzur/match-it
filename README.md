@@ -102,3 +102,61 @@ Features that are to be considered for future releases:
 * Score points counter that allows the user to score more points based on how quickly cards were matched.
 * Difficulty modes.
 
+## Structure
+The structure for MATCH IT memory game has been designed to allow all users (without age limit) to have a easy and intuitive access to the game and good experience. A consistent minimalistic design was implemented on both pages. The flow of the pages will feel natural and allow for the user to access game page without any effort.
+
+* **Header**
+    * Game logo will act as a link back to the homepage.
+
+![Logo on the game page](/assets/readme-images/logo-readme.jpg)
+
+* **Main Page**
+    * Game Invite section, which explains the game type and sets the user's expectation.
+    * Animated PLAY button, that cheerfully jumps - drags user's attention and allows them to open the game page section. Intuitive enough even for younger users, who might still not be able to read.
+
+![Game invite section](/assets/readme-images/game-invite-readme.jpg)
+
+* **Footer**
+    * Social media icons allowing the user to find the game on Instagram and Facebook platforms.
+    * Copyright section.
+
+![Footer section](/assets/readme-images/footer-readme.jpg)
+
+* **Hero Image**
+    * Hero image on the main page changes depends on the screen size resolution.
+    * Hero images were personally made by the game creator.
+    * All of the images stay within the game style and theme.
+
+![Hero images used for main page](/assets/readme-images/hero-images-readme.jpg)
+
+* **Game Area**
+    * **Game Header:**
+        * Timer - set up automatically to 100 seconds, and counting down to increase user's engagement. Once reached 0 - game pops a game over message.
+        * Pairs counter - allows the user to keep track of the amount of pairs found. Once reached out to maximum of 9 points - game pops a congratulations message.
+        * Refresh button - allows the user to reload the game board, start new game and reshuffle cards.
+
+![Game Header](/assets/readme-images/game-headings-readme.jpg)
+
+* **Game board:**
+    * containing 18 cards in total. 9 types of cards, where 2 cards are having identical face sides. All cards have back side in pink color, and face side with different geometrical shapes in different colors.
+    * Game board is fully responsive and cards adjust to the screen size of the user's device. 
+    * Once the user hoovers over the card - it slightly moves. Once clicked - gives the card a 3D effect of moving around its Axis.
+    * Cards are shuffled on every reload of the game page, click on refresh button, or click on "Try again/ Play again" message on pop-up screen at the end of the game.
+    * Only two card faces can be uncovered at the same time. If cards match - they remain open, if not - the back face appears again.
+
+![Game Board](/assets/readme-images/game-board-readme.png)
+
+* **Game Over/ Victory pop-up screen**
+    * Game over pop-up - triggered once the remaining time in a game reaches 0. User sees a message "Not enough time? Try again", which allows the user to click on the message and start the game again.
+
+![Game-over pop-up](/assets/readme-images/game-over-readme.png)
+
+    * Victory pop-up - triggered once all the cards were matched and score for pairs reaches 9 points. User sees a message "Hooray! You matched all cards. Play again", which allows the user to click on the message and start the game again.
+
+![Victory pop-up](/assets/readme-images/victory-readme.png)
+
+
+
+
+
+
