@@ -179,7 +179,6 @@ I have chosen two fonts that have a continual use throughout the design of both 
 * Images used for hero images and card faces were created by the game creator (me - Katarzyna Zurawska) using iPad, Apple Pencil, and Procreate illustration app.
 * Logo for the game was created by game creator (me - Katarzyna Zurawska) using [VistaCreate page](https://create.vista.com/home/)
 
-
 # Features:
 ## Current Features:
 * Innovative, self-created images within the whole page (hero images, card faces, logo).
@@ -194,6 +193,37 @@ I have chosen two fonts that have a continual use throughout the design of both 
 * Score points counter that allows the user to score more points based on how quickly cards were matched.
 * Difficulty modes.
 * Save score to a local High Scores table.
+
+# Testing
+## [HTML Validator](https://validator.w3.org/)
+No errors were returned when passing through the official W3C validator. [Results](/assets/image-readme/html-validator.jpg)
+
+## [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+No errors were returned when passing through the official Jigsaw validator. [Results](/assets/image-readme/jigsaw-css.jpg)
+
+## [Lighthouse accessibility (Chrome DevTools)](https://developers.google.com/web/tools/lighthouse/)
+I confirmed that the colors and fonts chosen are easily readable and accessible by running it through Lighthouse in DevTools (both mobile and desktop versions).
+- [Desktop results](/assets/image-readme/lighthouse-performance-desktop.jpg)
+- [Mobile results](/assets/image-readme/lighthouse-performance-mobile.jpg)
+
+## Manual testing
+- I manually tested that the website works in different browsers: Chrome, Safari, Firefox.
+- I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar and manually testing the page on different devices (laptops, tablet, iPhone and three different Android smartphones).
+- I manually confirmed that the navigation, header, about us, why to swap, gallery and next swap pages, as well as contact information and newsletter sign up texts are all readable and easy to understand and use.
+- I have confirmed that the newsletter form works: requires entry in the email field, will only accept email in the email field, and the submit button works.
+
+# Bugs and fixes
+## Solved bugs
+- When the file got deployed I discovered that website title shows up on the top of every page in form of text element, that I wasn't able to remove or hide using CSS.
+- I discovered that one of the closing tags in head element was not used properly and was missing one of the angle brackets that was influencing the title element to display on the page. Once closed properly – it moved title out of body into its proper function, and fixed the problem.
+
+![Bug before fixing](/assets/image-readme/bug-before.jpg)
+![Bug after fixing](/assets/image-readme/bug-after.jpg)
+
+
+
+
+
 
 # Technologies
 ## Languages
