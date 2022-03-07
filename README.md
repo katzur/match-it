@@ -74,3 +74,31 @@ The idea behind the game is to memorize the cards position on the board, and pai
     - As a game creator I want to ensure the game is easy to navigate and play for the users.
     - As a game creator I want to make sure the users enjoy their time using the page, on any device type.
     - As a game creator I want the users to feel the need of coming back to the created page.
+
+## Strategy
+The main goal was to create an easy to navigate ans simple memory game that displays all data in a clear and easy to read way. The webiste provides consistent styling across both pages, provides accessibility on different device types, and ensures that the agame itself runs without any issues. Created code is easy to navigate, and allows implementation of future features.
+### Project Goals
+* To provide fun and easy to navigate memory game.
+* To allow younger users to learn about geometrical shapes and colors.
+* To allow the users to practice their memory skills and beat their previous time scores.
+* To allow future updates (different cards, more cards, etc)
+
+## Scope:
+The scope of MATCH IT memory game is currently defined by the following features:
+* Functioning memory game application (18 cards in total - 9 pairs to match).
+* Innovative, self-created images within the whole page (hero images, card faces, logo).
+* Time counter (100 seconds) that makes the game more competitive and increases user's engagement.
+* Pair counter that counts all the matched card pairs which the user found during the game. 
+* Button that allows to refresh the game board and reshuffle the cards.
+* Pop-up messages at the end of the game (in case of winning or running out of time), allowing the user to replay the game.
+* Fully responsive design.
+* Simple and easy to navigate page structure and consistent styling.
+* Footer with social media links and copyright.
+* Favicon that is relating to the game type.
+* Links that are functioning and content that is relevant to the page.
+
+Features that are to be considered for future releases:
+* Different game options (different card types, more game categories).
+* Score points counter that allows the user to score more points based on how quickly cards were matched.
+* Difficulty modes.
+
