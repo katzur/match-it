@@ -196,10 +196,19 @@ I have chosen two fonts that have a continual use throughout the design of both 
 
 # Testing
 ## [HTML Validator](https://validator.w3.org/)
-No errors were returned when passing through the official W3C validator. [Results](/assets/image-readme/html-validator.jpg)
+No errors were returned when passing through the official W3C validator. 
+[Results for index page](/assets/readme-images/html-validation.jpg)
+[Results for game page](/assets/readme-images/html-game-validation.jpg)
 
 ## [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator)
-No errors were returned when passing through the official Jigsaw validator. [Results](/assets/image-readme/jigsaw-css.jpg)
+No errors were returned when passing through the official Jigsaw validator. [Results for index page](/assets/readme-images/css-validation.jpg)
+[Results for game page](/assets/readme-images/css-game-validation.jpg)
+
+## [JS HINT](https://jshint.com/)
+
+Game .js file has been passed through JSHint and do not show any errors.
+There have been no errors showing in the console as well.
+[Result](/assets/readme-images/js-validation.jpg)
 
 ## [Lighthouse accessibility (Chrome DevTools)](https://developers.google.com/web/tools/lighthouse/)
 I confirmed that the colors and fonts chosen are easily readable and accessible by running it through Lighthouse in DevTools (both mobile and desktop versions).

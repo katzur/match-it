@@ -16,8 +16,8 @@ body {
 /* logo */
 
 #logo img {
-    max-width: 15%;
-    max-height: 15%;
+    width: 10em;
+    height: 10em;
     margin-left: 1rem;
     margin-top: -1em;
     float: left;
@@ -237,6 +237,7 @@ footer>p {
 
 .memory-card {
     background-color: #f2b5d4;
+    cursor: pointer;
     height: 130px;
     width: 128px;
     transform-style: preserve-3d;
