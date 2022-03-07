@@ -290,12 +290,26 @@ To make a local clone of the project follow these steps:
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
+## Media 
+- The images for the index page and game cards were made by me. I used iPad, Apple Pencil and [Procreate illustration software](https://en.wikipedia.org/wiki/Procreate_(software)).
+- The images compression done on the [Optimizilla page](https://imagecompressor.com/).
+- The logo image was created by me using[VistaCreate page](https://create.vista.com/).
+- The icons used on the page come from [FontAwesome](https://fontawesome.com/).
+- Fonts used throughout the website were imported from [Google Fonts](https://fonts.google.com/).
+- Color pallete creator and contrast checker were tracked using [Coolors page](https://coolors.co/).
+
+## Other technologies
+- [Balsamiq](https://balsamiq.com/) was used to design wireframes for the website.
+- [GitHub](https://github.com/) provided a repository for the website.
+
 ## Content and credits
 * The code inspiration to this project was based on the CI Love Maths Project (best practices for JS functions look and flow with console.log checks).
 * Page look inspiration came during the browsing for simple web designs on [Pinterest](https://pl.pinterest.com/pin/598767712966846340/).
 * Matching game JavaScript functions flow and CSS 3D effect for cards click event was based on [YT tutorial from Marina Ferreira](https://www.youtube.com/watch?v=ZniVgo8U7ek). JS code form Marina's video has been a base for my project and helped me a lot to understand functions and logic needed for this type of pairing game. Additionally 3D effect helped me to achieve more sophisticated effect for cards flip. Code used form Marina's video has been credited within comments in my code. Huge thank you!
 * Overlay pop-up text at the end of the game (in case of running out of time or matching all the cards) was based on [Web Dev Simplified YT tutorial's idea](https://www.youtube.com/watch?v=28VfzEiJgy4). I took the inspiration only from CSS part, and buil JavaScript function by myself to implement this idea in my game. Thank you! 
 * CSS code for bouncy animation for button element in the index page comes from [Federico Dossena's digital library](https://fdossena.com/?p=html5cool/buttons/i.frag). It allowed me to make the button more interesting and drags user's attention to it. Thank you!
+* [Stack Overflow](https://stackoverflow.com/) helped me in many situations with HTML, CSS and JS issues. Very grateful for the knowledgable community of Stack Overflow.
+*  [Code Intitute's Slack](https://slack.com/) CI community provided all neccessary help thoughout the project development. Huge thank you to all the Slack CI fellow students, my mentor [Chris Quinn](https://github.com/10xOXR) , our CI msletb-nov-2021 cohort facilitator [Kasia Bogucka](https://github.com/bezebee), and my boyfriend Dino, who provided gret help and support for me even in the most stressful moments of developing this project (especially JavaScript part). Thank you!!!
 
 
 
