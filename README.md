@@ -211,23 +211,43 @@ There have been no errors showing in the console as well.
 [Result](/assets/readme-images/js-validation.jpg)
 
 ## [Lighthouse accessibility (Chrome DevTools)](https://developers.google.com/web/tools/lighthouse/)
-I confirmed that the colors and fonts chosen are easily readable and accessible by running it through Lighthouse in DevTools (both mobile and desktop versions).
-- [Desktop results](/assets/image-readme/lighthouse-performance-desktop.jpg)
-- [Mobile results](/assets/image-readme/lighthouse-performance-mobile.jpg)
+For running the Lighthouse tests, I used an incognito window to avoid any errors and issues that could be caused by any Chrome extensions in use.
+* Index.html
+    * [Desktop](/assets/readme-images/lighthouse-index-desktop.jpg)
+    * [Mobile](/assets/readme-images/lighthouse-index-mobile.jpg)
+    
+* Game.html
+    * [Desktop](/assets/readme-images/lighthouse-game-page.jpg)
+    * [Mobile](/assets/readme-images/lighthouse-game-mobile.jpg)
 
 ## Manual testing
-- I manually tested that the website works in different browsers: Chrome, Safari, Firefox.
-- I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar and manually testing the page on different devices (laptops, tablet, iPhone and three different Android smartphones).
-- I manually confirmed that the navigation, header, about us, why to swap, gallery and next swap pages, as well as contact information and newsletter sign up texts are all readable and easy to understand and use.
-- I have confirmed that the newsletter form works: requires entry in the email field, will only accept email in the email field, and the submit button works.
+* I manually tested that the game works in various browsers: Chrome, Safari, Firefox.
+- I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar and manually testing the page on different devices (laptops, large screen PC monitor, iPad 10", iPhone SE, and three different Android smartphones).
+- I manually confirmed that the all the texts on both pages are clearly readable, page content easy to understand, and game easy to use and navigate.
+- I have confirmed that the links to external pages work properly (social media links, logo, pop-up messages) and the buttons work as well (play button, refresh button).
 
-# Bugs and fixes
-## Solved bugs
-- When the file got deployed I discovered that website title shows up on the top of every page in form of text element, that I wasn't able to remove or hide using CSS.
-- I discovered that one of the closing tags in head element was not used properly and was missing one of the angle brackets that was influencing the title element to display on the page. Once closed properly – it moved title out of body into its proper function, and fixed the problem.
+## Bugs and fixes
+### Solved bugs
+* [Issue with favicon error shown in Inspect Mode in Chrome DevTools Console.](/assets/readme-images/favicon-error.png)
+To get rid of the pesky "favicon error" in DevTools console it was enough to add an icon image in the images folder, and add a line in HTML head:
+`<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">`
 
-![Bug before fixing](/assets/image-readme/bug-before.jpg)
-![Bug after fixing](/assets/image-readme/bug-after.jpg)
+* Issue with Lighthouse game page performance for mobile. At first Lighthouse was scoring the mobile performance under 90. It was possible to higher the rating by adding width and height to logo element, as well as compressing the images. Thanks to that performance got a green light.
+
+* [HTML validation error for img elements.](/assets/readme-images/html-error.jpg)
+It was possible to fix the error by adding alt attributes to img elements, as well as changing back face element from img to p.
+
+* JavaScript issue with broken logic once one card was clicked twice. It was considered as opening two cards.
+It was possible to fix by adding if statement to a flipCard function:
+`if (this === firstCard) return; this.classList.toggle('flip');`
+
+* JavaScript issue with bug causing the break in the game logic, once additional clicks were made before previous cards were covered again. Possible to fix by locking the board in function unflipCards:
+`function unflipCards() { lockBoard = true; setTimeout(() => { firstCard.classList.remove('flip'); secondCard.classList.remove('flip'); resetBoard(); }, 1100); }`
+
+
+
+
+
 
 
 
