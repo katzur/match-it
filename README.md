@@ -37,10 +37,9 @@
    3. [Cloning the project](#cloning-the-project)
 6. [Used technologies and credits](#used-technologies-and-credits)
     1. [Languages](#languages)
-    2. [Content](#content)
-    3. [Media](#media)
-    4. [Other technologies](#other-technologies)
-    5. [Credits](#credits)
+    2. [Media](#media)
+    3. [Other technologies](#other-technologies)
+    4. [Content and credits](#content-and-credits)
 
 # About the project
 MATCH IT is a fun, simple memory game website. The game itself allows the user to test their memory in short (under 2 min) rounds of pairing cards challenge. By the default the game is dedicated mostly to younger users, due to the illustrative, cheerful style of the game, and possibility to learn about the geometric shapes and colors while playing, although more mature users will find it enteratining as well, due to the timed, competitive nature of the game. 
@@ -291,11 +290,9 @@ To make a local clone of the project follow these steps:
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-## Content
+## Content and credits
 * The code inspiration to this project was based on the CI Love Maths Project (best practices for JS functions look and flow with console.log checks).
 * Page look inspiration came during the browsing for simple web designs on [Pinterest](https://pl.pinterest.com/pin/598767712966846340/).
-
-
 * Matching game JavaScript functions flow and CSS 3D effect for cards click event was based on [YT tutorial from Marina Ferreira](https://www.youtube.com/watch?v=ZniVgo8U7ek). JS code form Marina's video has been a base for my project and helped me a lot to understand functions and logic needed for this type of pairing game. Additionally 3D effect helped me to achieve more sophisticated effect for cards flip. Code used form Marina's video has been credited within comments in my code. Huge thank you!
 * Overlay pop-up text at the end of the game (in case of running out of time or matching all the cards) was based on [Web Dev Simplified YT tutorial's idea](https://www.youtube.com/watch?v=28VfzEiJgy4). I took the inspiration only from CSS part, and buil JavaScript function by myself to implement this idea in my game. Thank you! 
 * CSS code for bouncy animation for button element in the index page comes from [Federico Dossena's digital library](https://fdossena.com/?p=html5cool/buttons/i.frag). It allowed me to make the button more interesting and drags user's attention to it. Thank you!
