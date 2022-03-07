@@ -227,37 +227,78 @@ For running the Lighthouse tests, I used an incognito window to avoid any errors
 - I have confirmed that the links to external pages work properly (social media links, logo, pop-up messages) and the buttons work as well (play button, refresh button).
 
 ## Bugs and fixes
-### Solved bugs
-* [Issue with favicon error shown in Inspect Mode in Chrome DevTools Console.](/assets/readme-images/favicon-error.png)
+* FIXED: [Issue with favicon error shown in Inspect Mode in Chrome DevTools Console.](/assets/readme-images/favicon-error.png)
 To get rid of the pesky "favicon error" in DevTools console it was enough to add an icon image in the images folder, and add a line in HTML head:
 `<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">`
 
-* Issue with Lighthouse game page performance for mobile. At first Lighthouse was scoring the mobile performance under 90. It was possible to higher the rating by adding width and height to logo element, as well as compressing the images. Thanks to that performance got a green light.
+* FIXED: Issue with Lighthouse game page performance for mobile. At first Lighthouse was scoring the mobile performance under 90. It was possible to higher the rating by adding width and height to logo element, as well as compressing the images. Thanks to that performance got a green light.
 
-* [HTML validation error for img elements.](/assets/readme-images/html-error.jpg)
+* FIXED: [HTML validation error for img elements.](/assets/readme-images/html-error.jpg)
 It was possible to fix the error by adding alt attributes to img elements, as well as changing back face element from img to p.
 
-* JavaScript issue with broken logic once one card was clicked twice. It was considered as opening two cards.
+* FIXED: JavaScript issue with broken logic once one card was clicked twice. It was considered as opening two cards.
 It was possible to fix by adding if statement to a flipCard function:
 `if (this === firstCard) return; this.classList.toggle('flip');`
 
-* JavaScript issue with bug causing the break in the game logic, once additional clicks were made before previous cards were covered again. Possible to fix by locking the board in function unflipCards:
+* FIXED: JavaScript issue with bug causing the break in the game logic, once additional clicks were made before previous cards were covered again. Possible to fix by locking the board in function unflipCards:
 `function unflipCards() { lockBoard = true; setTimeout(() => { firstCard.classList.remove('flip'); secondCard.classList.remove('flip'); resetBoard(); }, 1100); }`
 
+# Deployment 
 
+## GitHub pages
+The steps to deploy via GitHub pages:
 
+1. Log into Github account.
+2. Navigate to the [Repository](https://github.com/katzur/cork-swap).
+3. Click the 'Settings' option at the top of the repository.
+4. Click the 'Pages' option on the left-hand menu, located near the bottom.
+5. Within the 'Source' tab Select the drop-down titled 'None'.
+6. Select the branch named 'main' (in some cases it can be named 'Master').
+7. Click 'Save'.
+8. You will be prompted with a URL to your deployed site.
+9. Site deployed.
 
+When the above steps have been completed, it can sometimes take a lmoment for the deployed URL to update. It is enough to refresh the page until the site is fully deployed.
 
+## Forking The GitHub Repository
+To use this code and make changes without affecting the original code you can do what is called 'Forking the repository'. By forking this repository you are given a copy of the code at that moment in time that you can use freely. To fork this repository you need to follow the following few steps:
 
+1. Log into your GitHub account.
+2. Navigate to the [Repository](https://github.com/katzur/cork-swap), you are wanting to fork.
+3. In the upper-right of the repository, click the 'Fork' button.
+4. A copy of the Repository will now be available within your repositories.
 
+You will now have a copy of the code available to clone and work on without affecting the original code.
 
+## Cloning the Project.
+To make a local clone of the project follow these steps:
 
+1. Log into your GitHub account.
+2. Navigate to the [Repository](https://github.com/katzur/cork-swap).
+3. In the upper section of the repository click the dropdown named 'Code'.
+4. Copy the SHH address.
+5. Open GitBash
+6. Navigate to the correct directory.
+7. Create a new directory named 'cork-swap'.
+8. CD into 'cork-swap'.
+9. Enter 'git clone SSH_ADDRESS'
+10. GitBash will clone the repository into this directory.
+11. enter 'code .' and this will open VS CODE and happy coding.
 
-
-# Technologies
+# Used technologies and credits
 ## Languages
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+## Content
+* The code inspiration to this project was based on the CI Love Maths Project (best practices for JS functions look and flow with console.log checks).
+* Page look inspiration came during the browsing for simple web designs on [Pinterest](https://pl.pinterest.com/pin/598767712966846340/).
+
+
+* Matching game JavaScript functions flow and CSS 3D effect for cards click event was based on [YT tutorial from Marina Ferreira](https://www.youtube.com/watch?v=ZniVgo8U7ek). JS code form Marina's video has been a base for my project and helped me a lot to understand functions and logic needed for this type of pairing game. Additionally 3D effect helped me to achieve more sophisticated effect for cards flip. Code used form Marina's video has been credited within comments in my code. Huge thank you!
+* Overlay pop-up text at the end of the game (in case of running out of time or matching all the cards) was based on [Web Dev Simplified YT tutorial's idea](https://www.youtube.com/watch?v=28VfzEiJgy4). I took the inspiration only from CSS part, and buil JavaScript function by myself to implement this idea in my game. Thank you! 
+* CSS code for bouncy animation for button element in the index page comes from [Federico Dossena's digital library](https://fdossena.com/?p=html5cool/buttons/i.frag). It allowed me to make the button more interesting and drags user's attention to it. Thank you!
+
 
 
