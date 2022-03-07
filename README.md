@@ -180,6 +180,25 @@ I have chosen two fonts that have a continual use throughout the design of both 
 * Logo for the game was created by game creator (me - Katarzyna Zurawska) using [VistaCreate page](https://create.vista.com/home/)
 
 
+# Features:
+## Current Features:
+* Innovative, self-created images within the whole page (hero images, card faces, logo).
+* Time counter (100 seconds) that makes the game more competitive and increases user's engagement.
+* Pair counter that counts all the matched card pairs which the user found during the game. 
+* Button that allows to refresh the game board and reshuffle the cards.
+* Pop-up messages at the end of the game (in case of winning or running out of time), allowing the user to replay the game.
+* Fully responsive design.
 
+## Future features:
+* Different game options (different card types, more game categories).
+* Score points counter that allows the user to score more points based on how quickly cards were matched.
+* Difficulty modes.
+* Save score to a local High Scores table.
+
+# Technologies
+## Languages
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 
