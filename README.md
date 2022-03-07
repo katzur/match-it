@@ -155,6 +155,29 @@ The structure for MATCH IT memory game has been designed to allow all users (wit
 
 ![Victory pop-up](/assets/readme-images/victory-readme.png)
 
+## Skeleton
+### Wireframes
+* [Desktop Main Page](/assets/readme-images/wireframe-main-page.jpg)
+* [Desktop Game Page](/assets/readme-images/wireframe-game-page.jpg)
+* [Mobile Main Page](/assets/readme-images/wireframe-main-mobile.jpg)
+* [Mobile Game Page](/assets/readme-images/wireframe-game-mobile.jpg)
+
+## Surface
+### Colors
+The colors choice selected for the MATCH IT pages is based on the rule of simplicity and modern minimalism. The black background is complimented by more colorful hero image and white, pink and purple colors of the fonts. The whole page have a clean look. All the colors of content and background were intentionally picked to keep the modern, simple design. They compliment each other well and keep great page contrast, which makes it more user-friendly and readable. 
+
+![Website color palette](/assets/readme-images/colors-readme.jpg)
+![Contrast checker](/assets/readme-images/contrast-checker-readme.jpg)
+
+### Typography
+I have chosen two fonts that have a continual use throughout the design of both pages.
+* [Rammetto One](https://fonts.google.com/specimen/Rammetto+One?query=rammetto) - main font that is used on the page for logo, headers, button on the main page and copyright section, as well as game headings (timer and pairs counter). Very easy to read, modern looking font. For the website purpose used bold with extra spacing between the letters for better reading experience.
+* [Chewy](https://fonts.google.com/specimen/Chewy?query=chewy) - easy to read sans-serif font that aesthetically compliments Chewy in paragraph elements and pop-up screen at the end of the game.
+
+### Images and icons
+* The main source for icons and favicon used throughout the website is [Font Awesome](https://fontawesome.com/).
+* Images used for hero images and card faces were created by the game creator (me - Katarzyna Zurawska) using iPad, Apple Pencil, and Procreate illustration app.
+* Logo for the game was created by game creator (me - Katarzyna Zurawska) using [VistaCreate page](https://create.vista.com/home/)
 
 
 
