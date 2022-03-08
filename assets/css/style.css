@@ -6,6 +6,10 @@
     border: none;
 }
 
+html, body {
+    height: 99%;
+}
+
 /* global style */
 body {
     background-color: black;

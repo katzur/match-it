@@ -31,6 +31,7 @@
     4. [Lighthouse accessibility (Chrome DevTools)](#lighthouse-accessibility-chrome-devtools)
     5. [Manual testing](#manual-testing)
     6. [Bugs and Fixes](#bugs-and-fixes)
+    7. [Testing User Stories](#testing-user-stories)
 5. [Deployment](#deployment)
    1. [GitHub Pages](#github-pages)
    2. [Forking Repository](#forking-the-github-repository)
@@ -45,6 +46,8 @@
 MATCH IT is a fun, simple memory game website. The game itself allows the user to test their memory in short (under 2 min) rounds of pairing cards challenge. By the default the game is dedicated mostly to younger users, due to the illustrative, cheerful style of the game, and possibility to learn about the geometric shapes and colors while playing, although more mature users will find it enteratining as well, due to the timed, competitive nature of the game. 
 
 The idea behind the game is to memorize the cards position on the board, and pair them as fast as possible, before the time runs out. Users can practice by reattempting the game, and try to improve their memory skills to beat their previous time scores, as well as learn about the geometric shapes and colors.
+
+![Website look on multiple devices.](/assets/readme-images/am-i-responsive.jpg)
 
 # User Experience (UX)
 ## Target Audience
@@ -69,7 +72,6 @@ The idea behind the game is to memorize the cards position on the board, and pai
 * Game creator:
     - As a game creator I'd like to create fun and interactive game for the users.
     - As a game creator I'd like to allow the younger users to learn about the geometrical shapes and colors while playing.
-    - As a game creator I want to ensure the page is easy to navigate.
     - As a game creator I want to ensure the game is easy to navigate and play for the users.
     - As a game creator I want to make sure the users enjoy their time using the page, on any device type.
     - As a game creator I want the users to feel the need of coming back to the created page.
@@ -220,7 +222,7 @@ For running the Lighthouse tests, I used an incognito window to avoid any errors
     * [Mobile](/assets/readme-images/lighthouse-game-mobile.jpg)
 
 ## Manual testing
-* I manually tested that the game works in various browsers: Chrome, Safari, Firefox.
+* I manually tested that the game works in various browsers: Chrome, Safari, Firefox, Microsoft Edge.
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar and manually testing the page on different devices (laptops, large screen PC monitor, iPad 10", iPhone SE, and three different Android smartphones).
 - I manually confirmed that the all the texts on both pages are clearly readable, page content easy to understand, and game easy to use and navigate.
 - I have confirmed that the links to external pages work properly (social media links, logo, pop-up messages) and the buttons work as well (play button, refresh button).
@@ -241,6 +243,11 @@ It was possible to fix by adding if statement to a flipCard function:
 
 * FIXED: JavaScript issue with bug causing the break in the game logic, once additional clicks were made before previous cards were covered again. Possible to fix by locking the board in function unflipCards:
 `function unflipCards() { lockBoard = true; setTimeout(() => { firstCard.classList.remove('flip'); secondCard.classList.remove('flip'); resetBoard(); }, 1100); }`
+
+## Testing User Stories
+By using the user stories I managed to implement new features of the game. I tested them to see if I managed to achieve them. I asked other users to test the page and asked them about their experience to compare with the achieved results.
+
+The results of this test can be found here: [User Story Test Results](https://drive.google.com/file/d/1ze4g_SOvJdjnZyWpclAPzftSswscrqaF/view?usp=sharing)
 
 # Deployment 
 
