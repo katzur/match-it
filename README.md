@@ -43,7 +43,7 @@
     4. [Content and credits](#content-and-credits)
 
 # About the project
-MATCH IT is a fun, simple memory game website. The game itself allows the user to test their memory in short (under 2 min) rounds of pairing cards challenge. By the default the game is dedicated mostly to younger users, due to the illustrative, cheerful style of the game, and possibility to learn about the geometric shapes and colors while playing, although more mature users will find it enteratining as well, due to the timed, competitive nature of the game. 
+MATCH IT is a fun, simple memory game website. The game itself allows the user to test their memory in short (under 2 min) rounds of pairing cards challenge. By the default the game is dedicated mostly to younger users, due to the illustrative, cheerful style of the game, and possibility to learn about the geometric shapes and colors while playing, although more mature users will find it entertaining as well, due to the timed, competitive nature of the game. 
 
 The idea behind the game is to memorize the cards position on the board, and pair them as fast as possible, before the time runs out. Users can practice by reattempting the game, and try to improve their memory skills to beat their previous time scores, as well as learn about the geometric shapes and colors.
 
@@ -77,7 +77,7 @@ The idea behind the game is to memorize the cards position on the board, and pai
     - As a game creator I want the users to feel the need of coming back to the created page.
 
 ## Strategy
-The main goal was to create an easy to navigate ans simple memory game that displays all data in a clear and easy to read way. The webiste provides consistent styling across both pages, provides accessibility on different device types, and ensures that the agame itself runs without any issues. Created code is easy to navigate, and allows implementation of future features.
+The main goal was to create an easy to navigate ans simple memory game that displays all data in a clear and easy to read way. The website provides consistent styling across both pages, provides accessibility on different device types, and ensures that the game itself runs without any issues. Created code is easy to navigate, and allows implementation of future features.
 ### Project Goals
 * To provide fun and easy to navigate memory game.
 * To allow younger users to learn about geometrical shapes and colors.
@@ -264,7 +264,7 @@ The steps to deploy via GitHub pages:
 8. You will be prompted with a URL to your deployed site.
 9. Site deployed.
 
-When the above steps have been completed, it can sometimes take a lmoment for the deployed URL to update. It is enough to refresh the page until the site is fully deployed.
+When the above steps have been completed, it can sometimes take a moment for the deployed URL to update. It is enough to refresh the page until the site is fully deployed.
 
 ## Forking The GitHub Repository
 To use this code and make changes without affecting the original code you can do what is called 'Forking the repository'. By forking this repository you are given a copy of the code at that moment in time that you can use freely. To fork this repository you need to follow the following few steps:
@@ -281,7 +281,7 @@ To make a local clone of the project follow these steps:
 
 1. Log into your GitHub account.
 2. Navigate to the [Repository](https://github.com/katzur/cork-swap).
-3. In the upper section of the repository click the dropdown named 'Code'.
+3. In the upper section of the repository click the drop-down named 'Code'.
 4. Copy the SHH address.
 5. Open GitBash
 6. Navigate to the correct directory.
@@ -300,10 +300,10 @@ To make a local clone of the project follow these steps:
 ## Media 
 - The images for the index page and game cards were made by me. I used iPad, Apple Pencil and [Procreate illustration software](https://en.wikipedia.org/wiki/Procreate_(software)).
 - The images compression done on the [Optimizilla page](https://imagecompressor.com/).
-- The logo image was created by me using[VistaCreate page](https://create.vista.com/).
+- The logo image was created by me using [VistaCreate page](https://create.vista.com/).
 - The icons used on the page come from [FontAwesome](https://fontawesome.com/).
 - Fonts used throughout the website were imported from [Google Fonts](https://fonts.google.com/).
-- Color pallete creator and contrast checker were tracked using [Coolors page](https://coolors.co/).
+- Color palette creator and contrast checker were tracked using [Coolors page](https://coolors.co/).
 
 ## Other technologies
 - [Balsamiq](https://balsamiq.com/) was used to design wireframes for the website.
@@ -313,10 +313,10 @@ To make a local clone of the project follow these steps:
 * The code inspiration to this project was based on the CI Love Maths Project (best practices for JS functions look and flow with console.log checks).
 * Page look inspiration came during the browsing for simple web designs on [Pinterest](https://pl.pinterest.com/pin/598767712966846340/).
 * Matching game JavaScript functions flow and CSS 3D effect for cards click event was based on [YT tutorial from Marina Ferreira](https://www.youtube.com/watch?v=ZniVgo8U7ek). JS code form Marina's video has been a base for my project and helped me a lot to understand functions and logic needed for this type of pairing game. Additionally 3D effect helped me to achieve more sophisticated effect for cards flip. Code used form Marina's video has been credited within comments in my code. Huge thank you!
-* Overlay pop-up text at the end of the game (in case of running out of time or matching all the cards) was based on [Web Dev Simplified YT tutorial's idea](https://www.youtube.com/watch?v=28VfzEiJgy4). I took the inspiration only from CSS part, and buil JavaScript function by myself to implement this idea in my game. Thank you! 
+* Overlay pop-up text at the end of the game (in case of running out of time or matching all the cards) was based on [Web Dev Simplified YT tutorial's idea](https://www.youtube.com/watch?v=28VfzEiJgy4). I took the inspiration only from CSS part, and build JavaScript function by myself to implement this idea in my game. Thank you! 
 * CSS code for bouncy animation for button element in the index page comes from [Federico Dossena's digital library](https://fdossena.com/?p=html5cool/buttons/i.frag). It allowed me to make the button more interesting and drags user's attention to it. Thank you!
-* [Stack Overflow](https://stackoverflow.com/) helped me in many situations with HTML, CSS and JS issues. Very grateful for the knowledgable community of Stack Overflow.
-*  [Code Intitute's Slack](https://slack.com/) CI community provided all neccessary help thoughout the project development. Huge thank you to all the Slack CI fellow students, my mentor [Chris Quinn](https://github.com/10xOXR) , our CI msletb-nov-2021 cohort facilitator [Kasia Bogucka](https://github.com/bezebee), and my boyfriend Dino, who provided gret help and support for me even in the most stressful moments of developing this project (especially JavaScript part). Thank you!!!
+* [Stack Overflow](https://stackoverflow.com/) helped me in many situations with HTML, CSS and JS issues. Very grateful for the knowledgeable community of Stack Overflow.
+*  [Code Intitute's Slack](https://slack.com/) CI community provided all necessary help throughout the project development. Huge thank you to all the Slack CI fellow students, my mentor [Chris Quinn](https://github.com/10xOXR) , our CI msletb-nov-2021 cohort facilitator [Kasia Bogucka](https://github.com/bezebee), and my boyfriend Dino, who provided great help and supported me even in the most stressful moments of developing this project (especially JavaScript part). Thank you!!!
 
 
 
